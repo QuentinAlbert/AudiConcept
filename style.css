@@ -1,0 +1,693 @@
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.932);
+}
+
+.img1.active{
+    transform: translateY(0%);
+    opacity: 100;
+}
+
+/* ----------- Header ---------- */
+
+#menu{
+    height: 53vw;
+    width: 100%;
+    margin: 0;
+    background-image: url(asset/img/audi-pb18-etron-concept_01.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: inline-flex;
+}
+
+#menu img{
+    width: 5vw;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    position: relative;
+    top: -3.5vw;
+    animation: go-bot .6s ease-in-out forwards;
+    
+}
+
+.menu{
+    display: inline-flex;
+    list-style: none;
+    font-size: 1vw;
+    padding-top: 0.75rem;
+}
+
+.menu li{
+    padding-left: 2rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.menu1{
+    position: relative;
+    top: -2vw;
+    opacity: 0;
+    animation: go-bot .6s ease-out;
+    animation-delay: 0.2s; 
+    animation-fill-mode: forwards;
+}
+.menu2{
+    position: relative;
+    top: -2vw;
+    opacity: 0;
+    animation: go-bot .6s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+}
+.menu3{
+    position: relative;
+    top: -2vw;
+    opacity: 0;
+    animation: go-bot .6s ease-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+.menu4{
+    position: relative;
+    top: -2vw;
+    opacity: 0;
+    animation: go-bot .6s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.menu5{
+    position: relative;
+    top: -2vw;
+    opacity: 0;
+    animation: go-bot .6s ease-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes go-bot{
+    to{
+        top: 0;
+        opacity: 100;
+    }
+}
+/* -------- RS menu ---------- */
+
+#menu-rs{
+   position: absolute;
+   top: 4vw;
+   right: 0;
+   overflow: hidden;
+   perspective: 800px;
+   display: inline-flex;
+}
+
+.rs{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.rs li{
+ list-style: none;
+}
+
+.rs img{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.facebook{
+    position:relative;
+    animation: go-left .3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    right: -5vw;
+    transition: 0.6s;
+    transform: rotateY(0);
+    transform-style: preserve-3d;
+}
+
+.fb-i{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.fb-i:hover .facebook{
+    transform: rotateY(360deg);
+}
+
+.fb-i:hover + .fb-t p{
+    right: 0;
+}
+
+.fb{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.fb-t{
+    font-size: 1vw;
+    overflow: hidden;
+}
+
+.fb-t p{
+    position: relative;
+    right: -5vw;
+    transition: .6s;
+}
+
+.instagram{
+    position:relative;
+    animation: go-left .3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    right: -5vw;
+    transition: 0.6s;
+    transform: rotateY(0);
+    transform-style: preserve-3d;
+}
+
+.in-i{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.in-i:hover .instagram{
+    transform: rotateY(360deg);
+}
+
+.in-i:hover + .in-t p{
+    right: 0;
+}
+
+.in{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.in-t{
+    font-size: 1vw;
+    overflow: hidden;
+}
+
+.in-t p{
+    position: relative;
+    right: -5vw;
+    transition: .6s;
+}
+
+.twitter{
+    position:relative;
+    right: -5vw;
+    animation: go-left .3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+    transition: 0.6s;
+    transform: rotateY(0);
+    transform-style: preserve-3d;
+}
+
+.tw-i{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.tw-i:hover .twitter{
+    transform: rotateY(360deg);
+}
+
+.tw-i:hover + .tw-t p{
+    right: 0;
+}
+
+.tw{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.tw-t{
+    font-size: 1vw;
+    overflow: hidden;
+}
+
+.tw-t p{
+    position: relative;
+    right: -5vw;
+    transition: .6s;
+}
+
+.yt-i{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.youtube{
+    position:relative;
+    right: -5vw;
+    animation: go-left .3s linear;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    transition: 0.6s;
+    transform: rotateY(0);
+    transform-style: preserve-3d;
+}
+
+.yt-i:hover .youtube{
+    transform: rotateY(360deg);
+}
+
+.yt-i:hover + .yt-t p{
+    right: 0;
+}
+
+.yt-t p{
+    position: relative;
+    right: -5vw;
+    transition: .6s;
+}
+
+.yt{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.yt-t{
+    font-size: 1vw;
+    overflow: hidden;
+}
+
+
+@keyframes go-left{
+    to{
+        right: 0vw;
+    }
+}
+/* ------- Title ------- */
+
+.menu-title1{
+    position: absolute;
+    top: 6vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5vw;
+    color: rgba(255, 255, 255, 0.932);
+    animation: fondu 0.6s linear;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.menu-title2{
+    position: absolute;
+    top: 45vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5vw;
+    color: rgba(255, 255, 255, 0.932);
+    animation: fondu 0.6s linear;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fondu{
+    to{
+        opacity: 100;
+    }
+}
+
+/* --------- Side view --------- */
+
+#side-view{
+    border-top: 2px solid rgba(255, 255, 255, 0.932);
+    width: 100%;
+    height: 50vh;
+    background-image: url(asset/img/audi-pb18-etron-concept_02.jpg);
+    background-position-y: 75%;
+    background-size: cover;
+}
+
+/* ------ interior view -------- */
+
+#interior-view{
+    display: inline-flex;
+    color: white;
+    background: black;
+    overflow-x: hidden;
+}
+
+
+.img1{
+    width: 30%;
+    margin: 4rem 2rem 4rem 4rem;
+    box-shadow: 0px 5px 30px black,
+                0px -5px 30px black;
+    border-radius: 2%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+                opacity 1s ease-in-out;
+}
+.img1.active{
+    transform: translateY(0%);
+    opacity: 100;
+}
+
+.interior-view{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    width: 35vw;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+}
+.interior-view.active2{
+    transform: translateX(0%);
+    opacity: 100;
+}
+
+.interior-view p{
+    font-size: 0.9VW;
+}
+
+
+/* ------ interior -------- */
+
+#interior{
+    display: inline-flex;
+    justify-content: flex-end;
+    color: white;
+    background: black;
+    overflow-x: hidden;
+}
+.img2.active{
+    transform: translateY(0%);
+    opacity: 100;
+}
+
+.img2{
+    width: 30%;
+    margin: 4rem 4rem 4rem 2rem;
+    box-shadow: 0px 5px 30px black,
+                0px -5px 30px black;
+    border-radius: 2%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+                opacity 1s ease-in-out;
+}
+.interior.active2{
+    transform: translateX(0%);
+    opacity: 100;
+}
+
+.interior{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    width: 35vw;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+}
+.interior p{
+    font-size: 0.9VW;
+}
+
+
+/* ------ spoiler -------- */
+
+#spoiler{
+    display: inline-flex;
+    color: white;
+    background: black;
+    overflow-x: hidden;
+}
+
+.img3{
+    width: 30%;
+    margin: 4rem 2rem 4rem 4rem;
+    box-shadow: 0px 5px 30px black,
+                0px -5px 30px black;
+    border-radius: 2%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+                opacity 1s ease-in-out;
+}
+.img3.active{
+    transform: translateY(0%);
+    opacity: 100;
+}
+
+.spoiler{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    width: 35vw;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+}
+.spoiler.active2{
+    transform: translateX(0%);
+    opacity: 100;
+}
+.spoiler p{
+    font-size: 0.9VW;
+}
+
+.title h2{
+    margin: 0;
+    font-size: 1.75VW;
+}
+
+img{
+    width: 300px;
+}
+
+/* ------ back view -------- */
+
+#back-view{
+    border-top: 2px solid rgba(255, 255, 255, 0.932);
+    width: 100%;
+    height: 60vh;
+    background-image: url(asset/img/audi-pb18-etron-concept_03.jpg);
+    background-position-y: 60%;
+    background-size: cover;
+}
+
+/* ------ Color --------- */
+
+#color{
+    width: 100%;
+    height: 15vw;
+    margin: 4vw 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+span{
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 8%;
+    z-index: 1;
+}
+span:nth-of-type(2){
+    left: 91%;
+    text-align: right;
+}
+
+section{
+    width: 72.5vw;
+    height: 15vw;
+    background: #f4f4f4;
+    margin: 10px auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+}
+section::-webkit-scrollbar{
+    display: none;
+}
+
+.caroussel{
+    position: relative;
+    left: 0;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color-name{
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+#color img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+/* ------------ Gallery --------- */
+
+#gallery{
+    width: 99vw;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+.gal1{
+    width: 40vw;
+    height: 20vw;
+    background-image: url(asset/img/audi-pb18-etron-concept_05.jpg);
+    background-size: 40vw 20vw;
+    margin: 5px;
+}
+.gal2{
+    width: 40vw;
+    height: 20vw;
+    background-image: url(asset/img/Audi-PB18-e-tron-Concept-2018-13-1600x1070.jpg);
+    background-size: 40vw 20vw;
+    margin: 5px;
+}
+.right-gal{
+    width: 40vw;
+    height: 40.25vw;
+    background-image: url(asset/img/Audi-PB18-e-tron-Concept-2018-11-1600x1130.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+/* --------- Config ------- */
+
+#config{
+    width: 100%;
+    height: 45vw;
+    margin-top: 4vw;
+    background-image: url(asset/img/Audi-PB18-e-tron-Concept-2018-1-1600x900\ .jpg);
+    background-size: cover;
+    background-position-y: 100%;
+    text-align: center;
+}
+
+#config a{
+    position: relative;
+    bottom: -40vw;
+    border: white 3px solid;
+    padding: 30px 50px 30px 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+}
+#config a:hover{
+    border: rgb(209, 209, 209) 3px solid;
+    color: rgb(209, 209, 209);
+} 
+
+/* -------- Sport ------ */
+
+#sport{
+    background-image: url(asset/img/benoit-fraylon-audi-pb18-etron-tom-coronel.jpg);
+    width: 100%;
+    height: 41vw;
+    margin-top: 5vw;
+    background-size: cover;
+    background-position-y: 50%;
+    text-align: center;
+}
+
+#sport h1{
+    position: relative;
+    top: 7vw;
+    font-size: 2vw;
+}
+
+/* --------- Footer ---------- */
+
+#footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 12vw;
+}
+
+#footer h1{
+    margin: 0;
+    padding: 50px 0px 20px 0px;
+    top: 7vw;
+}
+
+#footer p{
+    font-size: 1vw;
+}
+
+/* ----- Scroll effect ------ */
+
+.active{
+    transform: translateY(0%);
+    opacity: 100;
+}
+
+/* ----- Scroll ----- */
+
+/* width */
+ ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #cacaca;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100);
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(70, 70, 70);
+  }
+
+  #return{
+    font-family: 'Righteous', cursive;
+}
+#return a{
+    text-decoration: none;
+}
+.return{
+    color: #d2d2d2;
+    text-shadow: 0.15vw 0.15vw #eeee08,
+                0.25vw 0.25vw #f8b356,
+                0.35vw 0.35vw #e24242;
+    font-size: 2vw;
+    position: fixed;
+    right: 0.5vw;
+    top: 0.1vw;
+}
